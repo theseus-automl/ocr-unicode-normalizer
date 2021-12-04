@@ -27,6 +27,6 @@ class Normalizer:
         normalized = self._ocr.recognize(
             image,
             **kwargs,
-        )
+        ).strip()
 
         return normalized
