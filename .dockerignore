@@ -1,0 +1,10 @@
+.git/
+.gitignore
+
+tests/
+venv/
+setup.py
+__pycache__/
+
+*.md
+LICENSE
