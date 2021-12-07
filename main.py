@@ -43,13 +43,21 @@ async def normalize(
         )
 
     text = request.pop('text')
-    result = norm.normalize(
-        text,
-        **request,
-    )
-    resp = {
-        'status': 'ok',
-        'text': result,
-    }
+
+    try:
+        result = norm.normalize(
+            text,
+            **request,
+        )
+    except Exception as err:
+        resp = {
+            'status': 'error',
+            'detail': str(err),
+        }
+    else:
+        resp = {
+            'status': 'ok',
+            'text': result,
+        }
 
     return JSONResponse(content=jsonable_encoder(resp))
