@@ -1,6 +1,4 @@
-from src.normalizer import Normalizer
-
-__version__ = '0.1.0'
+from ocr_unicode_normalizer.normalizer import Normalizer
 
 __all__ = [
     'Normalizer',
