@@ -8,7 +8,7 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from yaml import safe_load
 
-from src.normalizer import Normalizer
+from ocr_unicode_normalizer.normalizer import Normalizer
 
 
 def load_config() -> dict:

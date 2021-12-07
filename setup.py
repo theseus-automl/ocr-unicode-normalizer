@@ -5,8 +5,6 @@ from setuptools import (
 )
 from typing import List
 
-from src import __version__
-
 _CWD = Path(__file__).parent
 
 
@@ -30,7 +28,7 @@ with open(_CWD / 'README.md', 'r', encoding='utf-8') as f:
 
 setup(
     name='ocr-unicode-normalizer',
-    version=__version__,
+    version='0.1.0',
     author='Timur Kasimov',
     description='Normalize strange Unicode symbols with Tesseract',
     long_description=long_description,
