@@ -13,7 +13,7 @@ WORKDIR /app
 RUN wget -O font.ttf http://www.unifoundry.com/pub/unifont/unifont-14.0.01/font-builds/unifont-14.0.01.ttf
 COPY src/ ./src
 COPY requirements.txt api-requirements.txt main.py ./
-RUN printf "data:\n    font_path: /app/font.ttf" > config.yaml
+RUN printf "data:\n    font_path: /app/font.ttf\n    tessdata_path: /usr/share/tesseract-ocr/5/tessdata" > config.yaml
 
 RUN cat requirements.txt | xargs -n 1 python3 -m pip install --no-cache-dir \
     && python3 -m pip install --no-cache-dir -r api-requirements.txt

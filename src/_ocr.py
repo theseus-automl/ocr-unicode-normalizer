@@ -47,7 +47,7 @@ class OCR:
     @staticmethod
     def recognize(
         image: Union[Image.Image, Path],
-        lang: str = 'eng',
+        lang: str,
         **kwargs,
     ) -> str:
         if isinstance(image, Path):
