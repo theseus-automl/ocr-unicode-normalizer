@@ -6,5 +6,6 @@ venv/
 setup.py
 __pycache__/
 
+*.ttf
 *.md
 LICENSE
