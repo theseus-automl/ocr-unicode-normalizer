@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from src.normalizer import Normalizer
+from ocr_unicode_normalizer.normalizer import Normalizer
 
 _CWD = Path(__file__).parents[1]
 _DUMMY_PATH = _CWD / 'abcdef'

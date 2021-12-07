@@ -3,9 +3,9 @@ from typing import Optional
 
 from pytesseract import get_languages
 
-from src._exceptions import UnsupportedLanguageError
-from src._image_factory import ImageFactory
-from src._ocr import OCR
+from ocr_unicode_normalizer._exceptions import UnsupportedLanguageError
+from ocr_unicode_normalizer._image_factory import ImageFactory
+from ocr_unicode_normalizer._ocr import OCR
 
 
 class Normalizer:
