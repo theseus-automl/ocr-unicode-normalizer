@@ -1,0 +1,4 @@
+data:
+    "tesseract_path": "/usr/bin/tesseract"
+    "tessdata_path": "/usr/tessdata"
+    "font_path": "/usr/font.ttf"
