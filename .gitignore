@@ -4,6 +4,15 @@
 # MacOS
 .DS_store
 
+# Fonts
+*.ttf
+
+# Tesseract data
+tessdata
+
+# Local config
+config.yaml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

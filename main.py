@@ -33,7 +33,7 @@ async def normalize(
     request = await request.json()
 
     if 'text' not in request:
-        JSONResponse(
+        return JSONResponse(
             content=jsonable_encoder(
                 {
                     'status': 'error',
