@@ -1,0 +1,15 @@
+.git/
+.gitignore
+
+tests/
+venv/
+setup.py
+__pycache__/
+
+tessdata
+
+*.yaml
+*.ttf
+
+*.md
+LICENSE
